@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-display: 'Poppins';
+  --font-body: 'Poppins';
+}
+
+html, body, #__next {
+  height: 100%;
+}
+
+.container-padded {
+  @apply max-w-6xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.card {
+  @apply bg-white rounded-xl shadow-soft border border-pastelPink/40;
+}
+
+.btn-primary {
+  @apply inline-flex items-center justify-center rounded-xl bg-pastelPink text-cocoa font-semibold px-6 py-3 shadow-soft transition hover:bg-pastelLavender hover:scale-[1.01] active:scale-[.99];
+}
+
+.pill {
+  @apply inline-flex items-center gap-2 rounded-full bg-pastelMint text-cocoa/80 px-3 py-1 text-sm;
+}
+
